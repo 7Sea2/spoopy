@@ -10,18 +10,21 @@ public class PlayerMovement : MonoBehaviour
 
     public CharacterController characterController;
 
-
+    [Header ("physics")]
     public float gravity = -9.81f;
     private float Speed;
     public float WalkingSpeed;
     public float SprintSpeed;
-    public float JumpHeight = 3f; 
 
+    
+
+    public float JumpHeight = 3f;
+    bool isGrounded;
     public Transform GroundCheck;
     public float GroundDisstance = 0.4f;
     public LayerMask GroundMask;
 
-    bool isGrounded;
+    
 
     Vector3 velocity;
 
@@ -86,13 +89,13 @@ public class PlayerMovement : MonoBehaviour
         characterController.Move(velocity * Time.deltaTime);
 
     }
+
+
+
+
+
+
     // Update is called once per frame
-    
-    
-    
-    
-    
-    
     void FixedUpdate()
     {
               
