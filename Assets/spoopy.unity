@@ -480,15 +480,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55cdb459ac7bb9d438c064d0b4cea6bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SprintKey: 304
+  JumpKey: 32
   characterController: {fileID: 804874812}
   gravity: -39.24
-  speed: 12
+  WalkingSpeed: 8
+  SprintSpeed: 15
   JumpHeight: 3
   GroundCheck: {fileID: 978657519}
   GroundDisstance: 0.4
   GroundMask:
     serializedVersion: 2
     m_Bits: 512
+  stateplayer: 0
 --- !u!1 &978657518
 GameObject:
   m_ObjectHideFlags: 0
